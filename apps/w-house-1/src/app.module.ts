@@ -1,5 +1,12 @@
 import { Module } from "@nestjs/common";
 import { UserModule } from "./user/user.module";
+import { BatchModule } from "./batch/batch.module";
+import { RouteModule } from "./route/route.module";
+import { AssetModule } from "./asset/asset.module";
+import { ProductionOrderModule } from "./productionOrder/productionOrder.module";
+import { ItemModule } from "./item/item.module";
+import { OperationModule } from "./operation/operation.module";
+import { RouteRecipeModule } from "./routeRecipe/routeRecipe.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -18,6 +25,13 @@ import { AuthModule } from "./auth/auth.module";
     ACLModule,
     AuthModule,
     UserModule,
+    BatchModule,
+    RouteModule,
+    AssetModule,
+    ProductionOrderModule,
+    ItemModule,
+    OperationModule,
+    RouteRecipeModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
